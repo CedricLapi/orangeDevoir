@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-content {
+  text-align: center;
+  color: #0000ff;
+}
+
+.cadre {
+  background-color: #3598db;
+  min-height: 450px;
+  min-width: 450px;
+  color: white;
+  height: 100vh;
+}
+
+.cadre h1 {
+  margin-left: 450px;
+  margin-bottom: 50px;
+}
+
+.cadre p {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.bout1 {
+  margin-left: 500px;
+  color: #3598db;
+  border: white;
+  margin-top: 100px;
+  /* transform: translateX(0) rotate(-720deg) scale(1); */
+  transition: all 1.5s ease-in-out;
+}
+
+.bout1:hover {
+  color: white;
+  background-color: #3598db;
+  border: 2px solid white;
+
+  /*transform: translateX(-100%) rotateX(720deg) scale(0) skew();*/
+
+  transform: rotateZ(1440deg);
+
+  transition: all 1.5s ease-in-out;
+}
+
+.boutonn:hover {
+  background-color: blue;
+  color: white;
+  border-color: white;
+
+  animation: 4s ease-in firstAnimation;
+  cursor: pointer;
+}
+
+div.title {
+  overflow: hidden;
+
+  height: 100px;
+}
+
+.title .titre {
+  
+  animation: 2s linear infinite alternate secondAnimation;
+  color: red;
+
+}
+
+
+@keyframes firstAnimation {
+  30% {
+    transform: translate(-400px, -400px);
+  }
+
+  40% {
+    transform: translate(400px, -400px);
+  }
+
+  60% {
+    transform: translate(400px, 400px);
+  }
+
+  80% {
+    transform: translate(-400px, 400px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+
+
+@keyframes secondAnimation {
+
+    0%{
+        transform: translateY(140px);
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0
+
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
