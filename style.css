@@ -49,14 +49,17 @@
   transition: all 1.5s ease-in-out;
 }
 
+
 .boutonn:hover {
   background-color: blue;
   color: white;
   border-color: white;
 
-  animation: 4s ease-in firstAnimation;
+  /*animation: 4s ease-in firstAnimation;*/
   cursor: pointer;
 }
+
+
 
 div.title {
   overflow: hidden;
@@ -64,12 +67,14 @@ div.title {
   height: 100px;
 }
 
+
 .title .titre {
   
-  animation: 2s linear infinite alternate secondAnimation;
+  /* animation: 2s linear infinite alternate secondAnimation; */
   color: red;
 
 }
+  
 
 
 @keyframes firstAnimation {
